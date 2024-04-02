@@ -1,0 +1,705 @@
+.hero3 {
+  background-color: #0C2144;
+  color: #ffffff;
+  padding: 1em;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  padding: 3em;
+  gap: 3em;
+  list-style-type: none;
+  transition: 2s;
+    .card-pos1 {
+      grid-column: 1;
+      grid-row: 1;
+      }
+          .card-pos2 {
+      grid-column: 2;
+      grid-row: 1;
+      }
+          .card-pos3 {
+      grid-column: 3;
+      grid-row: 1;
+      }
+          .card-pos4 {
+      grid-column: 1;
+      grid-row: 2;
+      }
+          .card-pos5 {
+      grid-column: 2;
+      grid-row: 2;
+      }
+          .card-pos6 {
+      grid-column: 3;
+      grid-row: 2;
+      }
+          .text-venta {
+      font-size: 5rem;
+  }
+.card {
+  width: 40rem;
+  height: 100%;
+  position: relative;
+  border-radius: calc(var(--curve) * 1px);
+  overflow: hidden;
+  text-decoration: none;
+  border: solid;
+  border-color: rgba(33, 34, 34, 0.414);
+  border-width: 0.5em;
+  &:hover .card__overlay {
+      transform: translateY(0);
+      }
+  &:hover .card__header {
+      transform: translateY(0);
+      }
+  .card__image {
+      transition: 2s;
+      }
+  .card__overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      z-index: 1;
+      border-radius: calc(var(--curve) * 1px);
+      background-color: white;
+      transform: translateY(100%);
+      transition: 1s ease-in-out;
+      }
+  .card__header {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 2em;
+      padding: 0.5em;
+      border-radius: calc(var(--curve) * 1px) 0 0 0;
+      background-color: rgb(187, 187, 187);
+      transform: translateY(-100%);
+      transition: 1s ease-in-out;
+      }
+  .card__arc {
+      position: absolute;
+      bottom: 100%;
+      right: 0;
+      z-index: 1;
+      transition: 2s;
+      }
+  .card__title {
+      display: flex;
+      text-shadow: 8px 8px 15px black;
+      font-size: 1.9em;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      margin: 0 0 0.3em;
+      color: black;
+      transition: 2s;
+      }
+  .card-text {
+      display: flex;
+      text-shadow: 8px 8px 15px black;
+      font-size: 1.1em;
+      text-align: center;
+      align-items: start;
+      justify-content: start;
+      margin: 0 0 0.3em;
+      color: black;
+      transition: 2s;
+      }
+  .card__description {
+      color: black;
+      overflow: hidden;
+      width: 100%;
+  }
+  }
+  .card-movement1 {
+      z-index: 2;
+    }
+  .card-movement2 {
+      z-index: 1;
+    }
+  .card-movement3 {
+      z-index: 3;
+    }
+  .card-movement4 {
+      z-index: 4;
+    }
+  .card-movement5 {
+      z-index: 5;
+    }
+  .botonquiero {
+      display: hide;
+      position: relative;
+      background-color: #0C2144;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 2.2em;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 10px;
+      position: relative;
+      left: 10em;
+      bottom: 3em;
+      border: unset;
+      border-radius: 15px;
+      color: #212121;
+      z-index: 1;
+      background: #e8e8e8;
+      position: relative;
+      font-weight: 1000;
+      box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+      transition: all 250ms;
+      overflow: hidden;
+    }
+  .botonquiero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 0;
+      border-radius: 15px;
+      background-color: #212121;
+      z-index: -1;
+      box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+      transition: all 250ms;
+    }
+  .botonquiero:hover {
+      color: #e8e8e8;
+    }
+  .botonquiero:hover::before {
+      width: 100%;
+    }
+  .botonquiero2 {
+    display: hide;
+    position: relative;
+    background-color: #0C2144;
+    border: none;
+    color: white;
+    padding: 7px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    right: 17em;
+    top: 6em;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    }
+  .botonquiero2::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 0;
+      border-radius: 15px;
+      background-color: #212121;
+      z-index: -1;
+      box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+      transition: all 250ms;
+    }
+  .botonquiero2:hover {
+      color: #e8e8e8;
+    }
+  .botonquiero2:hover::before {
+      width: 100%;
+    }
+
+}
+.popup {
+  z-index: 999999;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  display: none;
+  transition: 200ms;
+}
+
+.contentBox {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 2px solid black;
+  border-radius: 10px;
+  background: #fff;
+  border-radius: 20px;
+  display: flex;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.titleBox {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.oferta {
+  padding: 1rem;
+  border-radius: 25px;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.textocompleto {
+  text-align: center;
+  text-transform: uppercase;
+  color: #F1FAEE;
+  font-size: 4rem;
+  padding: 1rem;
+}
+
+.roller {
+  height: 4.125rem;
+  line-height: 4rem;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff6a00;
+}
+
+.rolltext {
+  position: absolute;
+  top: 0;
+  animation: slide 10s infinite;
+}
+
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -4rem;
+  }
+  50% {
+    top: -8rem;
+  }
+}
+
+@media (max-width: 2030px) {
+  .cards {
+    .card {
+      width: 30rem;
+      .card__description {
+        color: black;
+        overflow: hidden;
+    }
+    }
+    .botonquiero {
+      left: 7em;
+      bottom: 2.5em;
+      font-size: 2em;
+    }
+  } 
+}
+
+@media (max-width: 1566px) {
+  .cards {
+    .card {
+      width: 27rem;
+      .card__title {
+        font-size: 1.8em;
+      }
+    }
+    .botonquiero {
+      left: 9em;
+      bottom: 3.8em;
+      font-size: 1.5em;
+    }
+    .botonquiero2 {
+      top: 4em;
+      right: 16em;
+      font-size: 1.01em;
+    }
+
+  } 
+}
+
+@media (max-width: 1410px) {
+  .cards {
+    .card {
+      width: 25rem;
+      .card__title {
+        font-size: 1.6em;
+      }
+    }
+    .botonquiero {
+      left: 8.9em;
+      bottom: 4em;
+      font-size: 1.4em;
+    }
+    .botonquiero2 {
+      top: 6em;
+      right: 16.5em;
+      font-size: 0.9em;
+    }
+  } 
+}
+
+@media (max-width: 1310px) {
+  .cards {
+    .card {
+      .card__title {
+        font-size: 1.3em;
+      }
+      .card-text {
+        font-size: 0.91em;
+      }
+    }
+    .botonquiero {
+      left: 8.5em;
+      bottom: 4em;
+      font-size: 1.2em;
+    }
+    .botonquiero2 {
+      top: 5.5em;
+      right: 15em;
+      font-size: 0.85em;
+    }
+  } 
+}
+
+@media (max-width: 1310px) {
+  .cards {
+    grid-template-columns: 2fr 1fr 1fr 2fr ;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    .card {
+      width: 26rem;
+      .card__title {
+        font-size: 1.2em;
+      }
+      .card-text {
+        font-size: 0.85em;
+      }
+    }
+    .botonquiero {
+      left: 8.5em;
+      bottom: 4em;
+      font-size: 1.2em;
+    }
+    .botonquiero2 {
+      top: 5.5em;
+      right: 15em;
+      font-size: 0.85em;
+    }
+    .card-pos1 {
+      grid-column: 2;
+      grid-row: 1;
+      }
+          .card-pos2 {
+      grid-column: 3;
+      grid-row: 1;
+      }
+          .card-pos3 {
+      grid-column: 2;
+      grid-row: 2;
+      }
+          .card-pos4 {
+      grid-column: 3;
+      grid-row: 2;
+      }
+          .card-pos5 {
+      grid-column: 2;
+      grid-row: 3;
+      }
+          .card-pos6 {
+      grid-column: 3;
+      grid-row: 3;
+      }
+  }
+  .oferta {
+    width: 40rem;
+  }
+}
+@media screen and (max-width: 912px) {
+  .cards {
+    .card {
+      width: 22rem;
+    }
+  }
+}
+
+@media (max-width: 766px) {
+  .cards {
+    grid-template-columns: 2fr 1fr 1fr 2fr ;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    .card {
+      width: 20rem;
+      .card__title {
+        font-size: 1.05em;
+      }
+      .card-text {
+        font-size: 0.75em;
+      }
+    }
+    .botonquiero {
+      left: 12em;
+      bottom: 6em;
+      font-size: 0.8em;
+    }
+    .botonquiero2 {
+      bottom: 5em;
+      top: 4.5em;
+      right: 12.5em;
+      font-size: 0.85em;
+    }
+    .card-pos1 {
+      grid-column: 2;
+      grid-row: 1;
+      }
+          .card-pos2 {
+      grid-column: 3;
+      grid-row: 1;
+      }
+          .card-pos3 {
+      grid-column: 2;
+      grid-row: 2;
+      }
+          .card-pos4 {
+      grid-column: 3;
+      grid-row: 2;
+      }
+          .card-pos5 {
+      grid-column: 2;
+      grid-row: 3;
+      }
+          .card-pos6 {
+      grid-column: 3;
+      grid-row: 3;
+      }
+  } 
+  .oferta {
+    width: 35rem;
+  }
+  .close-button{
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 696px) {
+  .cards {
+    grid-template-columns: 2fr 1fr 1fr 1fr 2fr ;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    .card {
+      width: 30rem;
+      .card__title {
+        font-size: 2em;
+      }
+      .card-text {
+        font-size: 1.2em;
+      }
+    }
+    .botonquiero {
+      left: 11em;
+      bottom: 5em;
+      font-size: 1.5em;
+    }
+    .botonquiero2 {
+      bottom: 5em;
+      top: 4.5em;
+      right: 15em;
+      font-size: 1.2em;
+    }
+    .card-pos1 {
+      grid-column: 3;
+      grid-row: 1;
+      }
+          .card-pos2 {
+      grid-column: 3;
+      grid-row: 2;
+      }
+          .card-pos3 {
+      grid-column: 3;
+      grid-row: 3;
+      }
+          .card-pos4 {
+      grid-column: 3;
+      grid-row: 4;
+      }
+          .card-pos5 {
+      grid-column: 3;
+      grid-row: 5;
+      }
+          .card-pos6 {
+      grid-column: 3;
+      grid-row: 6;
+      }
+  } 
+  .oferta {
+    width: 35rem;
+  }
+  .close-button{
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 631px) {
+  .oferta {
+    width: 30rem;
+  }
+  .close-button {
+    font-size: 2.5rem;
+  }
+
+  .textocompleto {
+    font-size: 2.5rem;
+  }
+  .rolltext {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .textocompleto {
+    font-size: 2rem;
+  }
+  .rolltext {
+    font-size: 1em;
+  }
+} 
+@media screen and (max-width: 500px) {
+  .oferta {
+    width: 25rem;
+  }
+  .close-button{
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 696px) {
+  .cards {
+    .card {
+      width: 25rem;
+      .card__title {
+        font-size: 1.4em;
+      }
+      .card-text {
+        font-size: 1em;
+      }
+    }
+    .botonquiero {
+      left: 12em;
+      bottom: 6em;
+      font-size: 1.1em;
+    }
+    .botonquiero2 {
+      bottom: 5em;
+      top: 4.5em;
+      right: 13em;
+      font-size: 1em;
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .cards {
+    .card {
+      width: 22rem;
+      .card__title {
+        font-size: 1.19em;
+      }
+      .card-text {
+        font-size: 0.85em;
+      }
+    }
+    .botonquiero {
+      left: 11em;
+      bottom: 6em;
+      font-size: 1em;
+    }
+    .botonquiero2 {
+      bottom: 5.2em;
+      top: 4.5em;
+      right: 11.7em;
+      font-size: 1em;
+    }
+  }
+}
+
+
+@media screen and (max-width: 420px) {
+  .oferta {
+    width: 21rem;
+  }
+  .close-button{
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .cards {
+    .card {
+      width: 18rem;
+      .card__title {
+        font-size: 0.9em;
+      }
+      .card-text {
+        font-size: 0.7em;
+      }
+    }
+    .botonquiero {
+      left: 11em;
+      bottom: 6em;
+      font-size: 0.8em;
+    }
+    .botonquiero2 {
+      bottom: 5.2em;
+      top: 4.5em;
+      right: 11.7em;
+      font-size: 0.8em;
+    }
+  }
+  .oferta {
+    width: 19rem;
+  }
+  .close-button{
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,73 @@
+.hero2 {
+    background-color: $colorPrincipal;
+    color: $colorTexto;
+    text-align: center;
+    align-items: center;
+    .carru {
+        border-style: solid;
+        border-radius: 0.5rem;
+    }
+    .titulopro3 {
+        display: inline-block;
+        position: relative;
+        padding: 1rem;
+        margin: 0.5rem;
+        border: 0.2rem;
+        border-color: $colorSecundario;
+        border-style: solid;
+    }
+    .proyecto {
+        font-size: 3rem;
+        padding: 2rem;
+    }
+    .proyectos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        column-gap: 2rem;
+    }
+    .tarjeta1 {
+        background-color: $colorSecundario;
+        border: solid;
+        border-color: $colorTerciario;
+        border-radius: 1%;
+        border-style: dashed;
+        grid-column: 2/3;
+    }
+    .tarjeta2 {
+        background-color: $colorSecundario;
+        border: solid;
+        border-color: $colorTerciario;
+        border-radius: 1%;
+        border-style: dashed;
+        grid-column: 3/4;
+    }
+    .renderspro {
+        padding: 1rem;
+        width: 45rem;
+    }
+    .explicativo {
+        font-size: 1rem;
+        justify-content: center;
+    }
+}
+@media (min-width: 601px) {
+    .carruresp {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .carrupc {
+        display: none;
+    }
+    .carruresp {
+        display: show;
+    }
+}
+
+@media (max-width: 550px) {
+    .titulopro3 {
+        font-size: 1.2rem;
+    }
+}

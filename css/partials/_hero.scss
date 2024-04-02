@@ -1,0 +1,343 @@
+.hero {
+    background-color: $colorPrincipal;
+    color: $colorTexto;
+    display: grid;
+    grid-template-columns: 5fr 1fr 1.2fr; 
+     /* 5fr 1fr 0.5fr para FHD */
+     /* 5fr 1fr 1.2fr para QHD*/
+    padding: 2rem;
+    text-align: center;
+    align-items: center;
+    transition: 1s;
+
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .hero-text {
+        font-size: 2rem;
+        margin-top: 0.5rem;
+    }
+/*bg*/
+/*txt*/
+/*success*/
+.hero-button {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  
+  .hero-button-mobile {
+    font-size: 2rem;
+    display: inline-block;
+    color: $colorTexto;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    transition: 0.5s;
+
+    &::before {
+        margin-left: auto;
+      }
+      &::after, &::before {
+        content: "";
+        width: 0%;
+        height: 3px;
+        background: $colorTerciario;
+        display: block;
+        transition: 0.8s;
+      }
+      &:hover::after, &:hover::before {
+        width: 100%;
+    }
+    &:hover {
+        font-size: 2.5rem;
+    }
+}
+  
+  .hero-button button {
+    width: 550px;
+    height: 50px;
+    background-color: $colorPrincipal;
+    color: $colorTexto;
+    position: relative;
+    overflow: hidden;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 3px;
+  }
+  
+  .hero-button button:before, .hero-button button:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #44d8a4;
+    transition: all 0.3s cubic-bezier(0.35, 0.1, 0.25, 1);
+  }
+  
+  .hero-button button:before {
+    right: 0;
+    top: 0;
+    transition: all 0.5s cubic-bezier(0.35, 0.1, 0.25, 1);
+  }
+  
+  .hero-button button:after {
+    left: 0;
+    bottom: 0;
+  }
+  
+  .hero-button button span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+  }
+  
+  .hero-button button span:before, .hero-button button span:after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 0;
+    background-color: #31be8d;
+    transition: all 0.3s cubic-bezier(0.35, 0.1, 0.25, 1);
+  }
+  
+  .hero-button button span:before {
+    right: 0;
+    top: 0;
+    transition: all 0.5s cubic-bezier(0.35, 0.1, 0.25, 1);
+  }
+  
+  .hero-button button span:after {
+    left: 0;
+    bottom: 0;
+  }
+  
+  .hero-button button p {
+    padding: 0;
+    margin: 0;
+    transition: all 0.4s cubic-bezier(0.35, 0.1, 0.25, 1);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .hero-button button p:before, .hero-button button p:after {
+    position: absolute;
+    width: 100%;
+    transition: all 0.4s cubic-bezier(0.35, 0.1, 0.25, 1);
+    z-index: 1;
+    left: 0;
+  }
+  
+  .hero-button button p:before {
+    content: attr(data-title);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .hero-button button p:after {
+    content: attr(data-text);
+    top: 150%;
+    color: $colorTexto;
+  }
+  
+  .hero-button button:hover:before, .hero-button button:hover:after {
+    width: 100%;
+  }
+  
+  .hero-button button:hover span {
+    z-index: 1;
+  }
+  
+  .hero-button button:hover span:before, .hero-button button:hover span:after {
+    height: 100%;
+  }
+  
+  .hero-button button:hover p:before {
+    top: -100%;
+    transform: rotate(0deg);
+  }
+  
+  .hero-button button:hover p:after {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .hero-button button.start {
+    background-color: #44d8a4;
+    box-shadow: 0px 5px 10px -10px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+  }
+  
+  .hero-button button.start p:before {
+    top: -50%;
+    transform: rotate(5deg);
+  }
+  
+  .hero-button button.start p:after {
+    color: white;
+    transition: all 0s ease;
+    content: attr(data-start);
+    top: 50%;
+    transform: translateY(-50%);
+    animation: start 0.3s ease;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes start {
+    from {
+      top: -50%;
+    }
+  }
+  
+  .hero-button button.start:hover:before, .hero-button button.start:hover:after {
+    display: none;
+  }
+  
+  .hero-button button.start:hover span {
+    display: none;
+  }
+  
+  .hero-button button:active {
+    outline: none;
+    border: none;
+  }
+  
+  .hero-button button:focus {
+    outline: 0;
+  }
+}
+
+.render1 {
+    width: 45rem;
+    border: solid 1rem;
+    border-color: #b3c2f230;
+    transition: 1s;
+}
+
+.bi-arrow-down-short {
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 1305px) {
+    
+  .hero-grid {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      row-gap: 0rem;
+  }
+  .hero-left-grid {
+      grid-column: 1/3;
+      grid-row: 1/2;
+  }
+  .render-grid {
+    position: relative;
+      width: 45rem;
+      bottom: 5rem;
+  }
+  .hero-right-grid {
+      grid-row: 2/3;
+      grid-column: 1/3;
+  }
+}
+
+@media (max-width: 1110px) {
+    .render-grid {
+        width: 35rem;
+        bottom: 2rem;
+    }
+}
+
+@media (max-width: 592px) {
+    .hero {
+    .hero-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 1rem;
+    }
+    .hero-left-grid {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .render-grid {
+        width: 30rem;
+    }
+    .hero-right-grid {
+        grid-row: 2/3;
+        grid-column: 1/3;
+    }
+  }
+}
+
+@media (min-width: 564px) {
+  .hero {
+    .hero-button-mobile1 {
+      display: none;
+    }
+  }
+}
+@media (max-width: 563px) {
+  .hero {
+    .hero-button {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 545px) {
+  .hero{
+    .render-grid {
+      width: 27rem;
+  }
+  }
+}
+@media (max-width: 493px) {
+  .hero {
+    .render-grid {
+      width: 25rem;
+    }
+  }
+}
+
+@media (max-width: 466px) {
+  .hero {
+    .render-grid {
+      width: 22rem;
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .hero {
+    .render-grid {
+      width: 20.5rem;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .hero {
+    .render-grid {
+      width: 19rem;
+    }
+  }
+}

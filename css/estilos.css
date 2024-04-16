@@ -1239,7 +1239,7 @@ ul {
     grid-row: 3;
   }
   .oferta {
-    width: 40rem;
+    width: 30rem;
   }
 }
 @media (max-width: 1310px) {
@@ -1324,7 +1324,7 @@ ul {
     grid-row: 3;
   }
   .oferta {
-    width: 35rem;
+    width: 30rem;
   }
   .close-button {
     font-size: 2rem;

@@ -16,6 +16,17 @@
 <body>
     <!-- Todo lo que es header, logo y menu -->
     <header class="encabezado" id="inicio">
+        <div class="popup">
+            <div class="contentBox">
+                <div class="titleBox">
+                <h1 class="poptitle">¡Imperdible!</h1>
+                    <button class="close-button">&times;</button>
+                </div>
+                <div class="imgBx">
+                  <img src="../images/Ofertabonificado.png" alt="" class="oferta">
+                </div>
+            </div>
+        </div>      
         <a href="./index.html"><img src="./images/tu-hogar-2024-logo-recortado.png" alt="Logo Grande" class="logogrande" data-aos="fade-right" data-aos-duration="1800"></a>
         <a href="./index.html"><img src="./images/tu-hogar-2024-logo-recortado.png" alt="Logo Pequeño" class="logopequeno" data-aos="fade-right" data-aos-duration="1800"></a>
         <ul class="menu">
@@ -125,6 +136,20 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
+  </script>
+  <script>
+const popup = document.querySelector(".popup");
+const close = document.querySelector(".close-button")
+window.onload = function(){
+    setTimeout(function(){
+        popup.style.display = "block"
+    }, 2000)
+}
+
+close.addEventListener("click", () => {
+    popup.style.display = "none"
+})
+
   </script>
 </body>
 </html>

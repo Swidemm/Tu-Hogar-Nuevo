@@ -52,17 +52,18 @@
         </div>
       </nav>
 </header>
-    <div class="popup">
-      <div class="contentBox">
-          <div class="titleBox">
-              <h1 class="title">¡Oferta Imperdible!</h1>
-              <button class="close-button">&times;</button>
-          </div>
-          <div class="imgBx">
-            <img src="../images/Ofertabonificado.png" alt="" class="oferta">
-          </div>
-      </div>
-  </div>
+  <div class="popup2">
+    <div class="contentBox2">
+        <div class="titleBox2">
+            <h1 class="title2">¡Oferta Imperdible!</h1>
+            <button class="close-button2">&times;</button>
+        </div>
+        <div class="imgBx2">
+          <img src="../images/todofinanciado.jpg" alt="" class="oferta">
+        </div>
+    </div>
+</div>
+
     <main class="hero3">
       <div class="container">
         <h1 class="textocompleto">Elige <b>tu hogar</b> y haz realidad tus <div class="roller">
@@ -249,17 +250,18 @@ function redirectToPage6() {
     window.location.href = 'https://tuhogar.site/pages/contacto6.html';
 }
 
-const popup = document.querySelector(".popup");
-const close = document.querySelector(".close-button")
+const popup2 = document.querySelector(".popup2");
+const close2 = document.querySelector(".close-button2")
+
 
 window.onload = function(){
     setTimeout(function(){
-        popup.style.display = "block"
-    }, 2000)
+        popup2.style.display = "block"
+    }, 1500)
 }
 
-close.addEventListener("click", () => {
-    popup.style.display = "none"
+close2.addEventListener("click", () => {
+    popup2.style.display = "none"
 })
 </script>
 </body>

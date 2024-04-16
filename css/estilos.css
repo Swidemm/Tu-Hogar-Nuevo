@@ -1043,6 +1043,51 @@ ul {
   font-weight: bold;
 }
 
+.poptitle {
+  color: black;
+}
+
+.popup2 {
+  z-index: 999999;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  display: none;
+  transition: 200ms;
+}
+
+.contentBox2 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 2px solid black;
+  border-radius: 10px;
+  background: #fff;
+  border-radius: 20px;
+  display: flex;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.titleBox2 {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.close-button2 {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 .oferta {
   padding: 1rem;
   border-radius: 25px;
@@ -1144,32 +1189,14 @@ ul {
     font-size: 0.9em;
   }
 }
-@media (max-width: 1310px) {
-  .cards .card .card__title {
-    font-size: 1.3em;
-  }
-  .cards .card .card-text {
-    font-size: 0.91em;
-  }
-  .cards .botonquiero {
-    left: 8.5em;
-    bottom: 4em;
-    font-size: 1.2em;
-  }
-  .cards .botonquiero2 {
-    top: 5.5em;
-    right: 15em;
-    font-size: 0.85em;
-  }
-}
-@media (max-width: 1360px) {
+@media (max-width: 1380px) {
   .cards {
     grid-template-columns: 2fr 1fr 1fr 2fr;
     grid-template-rows: 1fr 1fr;
     justify-content: center;
   }
   .cards .card {
-    width: 26rem;
+    width: 35rem;
   }
   .cards .card .card__title {
     font-size: 1.2em;
@@ -1213,6 +1240,32 @@ ul {
   }
   .oferta {
     width: 40rem;
+  }
+}
+@media (max-width: 1310px) {
+  .cards .card {
+    width: 30rem;
+  }
+  .cards .card .card__title {
+    font-size: 1.3em;
+  }
+  .cards .card .card-text {
+    font-size: 0.91em;
+  }
+  .cards .botonquiero {
+    left: 8.5em;
+    bottom: 4em;
+    font-size: 1.2em;
+  }
+  .cards .botonquiero2 {
+    top: 5.5em;
+    right: 15em;
+    font-size: 0.85em;
+  }
+}
+@media screen and (max-width: 1034px) {
+  .cards .card {
+    width: 26rem;
   }
 }
 @media screen and (max-width: 912px) {

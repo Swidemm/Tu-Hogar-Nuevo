@@ -757,6 +757,21 @@ ul {
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
 }
+.form .input3 {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 1.9rem;
+  color: #1a202c;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+.form .oferta {
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+}
 .form .submit {
   background-color: #1a202c;
   color: #fff;

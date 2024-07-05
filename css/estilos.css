@@ -803,6 +803,7 @@ ul {
   gap: 3em;
   list-style-type: none;
   transition: 2s;
+  filter: drop-shadow(1px 1px 30px black);
 }
 .cards .card-pos1 {
   grid-column: 1;
@@ -1766,6 +1767,118 @@ ul {
     gap: 2rem;
   }
   .ads .ad-grid .ads-div .ad-img {
+    width: 20rem;
+    border-radius: 1.5rem;
+  }
+}
+.ads2 {
+  padding: 1rem;
+}
+.ads2 .ad-text2 {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  filter: drop-shadow(1px 1px 30px gray);
+  font-size: 2.3rem;
+}
+.ads2 .ad-grid2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  margin-bottom: 1rem;
+}
+.ads2 .ad-grid2 .ads-div2 {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  filter: drop-shadow(1px 1px 20px gray);
+  transition: 1500ms;
+}
+.ads2 .ad-grid2 .ads-div2 .ad-img2 {
+  border: solid;
+  border-radius: 2rem;
+  width: 35rem;
+  transition: 1500ms;
+}
+
+@media (max-width: 1732px) {
+  .ads2 .ad-grid2 .ads-div2 .ad-img2 {
+    width: 40rem;
+  }
+}
+@media (max-width: 1557px) {
+  .ads2 .ad-grid2 .ads-div2 .ad-img2 {
+    width: 35rem;
+  }
+}
+@media (max-width: 1397px) {
+  .ads2 .ad-grid2 .ads-div2 {
+    gap: 5rem;
+  }
+  .ads2 .ad-grid2 .ads-div2 .ad-img2 {
+    width: 35rem;
+  }
+}
+@media (max-width: 1263px) {
+  .ads2 .ad-grid2 .ads-div2 {
+    gap: 5rem;
+  }
+  .ads2 .ad-grid2 .ads-div2 .ad-img2 {
+    width: 30rem;
+    border-radius: 3rem;
+  }
+}
+@media (max-width: 1080px) {
+  .ads2 .ad-grid2 .ads-div2 {
+    gap: 3rem;
+  }
+  .ads2 .ad-grid2 .ads-div2 .ad-img2 {
+    width: 28rem;
+    border-radius: 2rem;
+  }
+}
+@media (max-width: 990px) {
+  .ads2 .ad-grid2 .ads-div2 {
+    gap: 3.5rem;
+  }
+  .ads2 .ad-grid2 .ads-div2 .ad-img2 {
+    width: 23rem;
+  }
+}
+@media (max-width: 885px) {
+  .ads2 .ad-grid2 .ads-div2 {
+    gap: 2rem;
+  }
+  .ads2 .ad-grid2 .ads-div2 .ad-img2 {
+    width: 20em;
+  }
+}
+@media (max-width: 716px) {
+  .ads2 .ad-grid2 .ads-div2 {
+    gap: 2rem;
+  }
+  .ads2 .ad-grid2 .ads-div2 .ad-img2 {
+    width: 18rem;
+    border-radius: 1.5rem;
+  }
+}
+@media (max-width: 650px) {
+  .ads2 .ad-grid2 .ads-div2 {
+    display: grid;
+    gap: 2rem;
+  }
+  .ads2 .ad-grid2 .ads-div2 .ad-img2 {
+    width: 25rem;
+    border-radius: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .ads2 .ad-grid2 .ads-div2 {
+    display: grid;
+    gap: 2rem;
+  }
+  .ads2 .ad-grid2 .ads-div2 .ad-img2 {
     width: 20rem;
     border-radius: 1.5rem;
   }

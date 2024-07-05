@@ -1797,9 +1797,13 @@ ul {
 }
 .ads2 .ad-grid2 .ads-div2 .ad-img2 {
   border: solid;
-  border-radius: 2rem;
+  border-radius: 3rem;
   width: 35rem;
   transition: 1500ms;
+}
+.ads2 .ad-grid2 .ads-div2 .ad-img2:hover {
+  width: 40rem;
+  border-radius: 0rem;
 }
 
 @media (max-width: 1732px) {
@@ -1818,6 +1822,9 @@ ul {
   }
   .ads2 .ad-grid2 .ads-div2 .ad-img2 {
     width: 28rem;
+  }
+  .ads2 .ad-grid2 .ads-div2 .ad-img2:hover {
+    width: 32rem;
   }
 }
 @media (max-width: 1263px) {
@@ -1845,6 +1852,9 @@ ul {
   .ads2 .ad-grid2 .ads-div2 .ad-img2 {
     width: 23rem;
   }
+  .ads2 .ad-grid2 .ads-div2 .ad-img2:hover {
+    width: 28rem;
+  }
 }
 @media (max-width: 885px) {
   .ads2 .ad-grid2 .ads-div2 {
@@ -1853,14 +1863,20 @@ ul {
   .ads2 .ad-grid2 .ads-div2 .ad-img2 {
     width: 22rem;
   }
+  .ads2 .ad-grid2 .ads-div2 .ad-img2:hover {
+    width: 27rem;
+  }
 }
 @media (max-width: 716px) {
   .ads2 .ad-grid2 .ads-div2 {
     gap: 2rem;
   }
   .ads2 .ad-grid2 .ads-div2 .ad-img2 {
-    width: 18rem;
+    width: 19rem;
     border-radius: 1.5rem;
+  }
+  .ads2 .ad-grid2 .ads-div2 .ad-img2:hover {
+    width: 20rem;
   }
 }
 @media (max-width: 650px) {
@@ -1872,6 +1888,9 @@ ul {
     width: 25rem;
     border-radius: 2rem;
   }
+  .ads2 .ad-grid2 .ads-div2 .ad-img2:hover {
+    width: 30rem;
+  }
 }
 @media (max-width: 480px) {
   .ads2 .ad-grid2 .ads-div2 {
@@ -1879,7 +1898,23 @@ ul {
     gap: 2rem;
   }
   .ads2 .ad-grid2 .ads-div2 .ad-img2 {
-    width: 20rem;
+    width: 22rem;
     border-radius: 1.5rem;
+  }
+  .ads2 .ad-grid2 .ads-div2 .ad-img2:hover {
+    width: 23rem;
+  }
+}
+@media (max-width: 400px) {
+  .ads2 .ad-grid2 .ads-div2 {
+    display: grid;
+    gap: 2rem;
+  }
+  .ads2 .ad-grid2 .ads-div2 .ad-img2 {
+    width: 19rem;
+    border-radius: 1.5rem;
+  }
+  .ads2 .ad-grid2 .ads-div2 .ad-img2:hover {
+    width: 20rem;
   }
 }/*# sourceMappingURL=estilos.css.map */

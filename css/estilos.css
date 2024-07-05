@@ -1804,7 +1804,7 @@ ul {
 
 @media (max-width: 1732px) {
   .ads2 .ad-grid2 .ads-div2 .ad-img2 {
-    width: 40rem;
+    width: 35rem;
   }
 }
 @media (max-width: 1557px) {
@@ -1817,7 +1817,7 @@ ul {
     gap: 5rem;
   }
   .ads2 .ad-grid2 .ads-div2 .ad-img2 {
-    width: 35rem;
+    width: 28rem;
   }
 }
 @media (max-width: 1263px) {
@@ -1825,7 +1825,7 @@ ul {
     gap: 5rem;
   }
   .ads2 .ad-grid2 .ads-div2 .ad-img2 {
-    width: 30rem;
+    width: 28rem;
     border-radius: 3rem;
   }
 }
@@ -1851,7 +1851,7 @@ ul {
     gap: 2rem;
   }
   .ads2 .ad-grid2 .ads-div2 .ad-img2 {
-    width: 20em;
+    width: 22rem;
   }
 }
 @media (max-width: 716px) {

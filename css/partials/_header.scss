@@ -1,12 +1,13 @@
 .encabezado {
-    background: linear-gradient(175deg, #B3C2F2 0%, $colorPrincipal 49%);
+    // background: linear-gradient(175deg, #B3C2F2 0%, $colorPrincipal 49%);
+    background-color: #172b4d;
     display: flex;
     color: white;
     align-items: center;
     padding: 0.5rem 3rem;
 
     .logogrande  {
-        width: 15rem;
+        width: 10rem;
     }
 
     .logopequeno  {
@@ -27,7 +28,7 @@
     .menu {
         display: flex;
         gap: 2rem;
-        font-size: 1.7rem;
+        font-size: 1.6rem;
 
         .menu-button {
             color: $colorTexto;

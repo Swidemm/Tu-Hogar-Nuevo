@@ -81,7 +81,7 @@
   .hero-button button:before, .hero-button button:after {
     content: "";
     position: absolute;
-    width: 0;
+    width: 5%;
     height: 2px;
     background-color: #44d8a4;
     transition: all 0.3s cubic-bezier(0.35, 0.1, 0.25, 1);
@@ -237,7 +237,24 @@
     margin: 0;
     padding: 0;
 }
+// animista
 
+.shake-vertical{-webkit-animation:shake-vertical .8s cubic-bezier(.455,.03,.515,.955) 3s both;animation:shake-vertical .8s cubic-bezier(.455,.03,.515,.955) 4s both}
+@-webkit-keyframes shake-vertical{0%,100%{-webkit-transform:translateY(0);transform:translateY(0)}10%,30%,50%,70%{-webkit-transform:translateY(-8px);transform:translateY(-8px)}20%,40%,60%{-webkit-transform:translateY(8px);transform:translateY(8px)}80%{-webkit-transform:translateY(6.4px);transform:translateY(6.4px)}90%{-webkit-transform:translateY(-6.4px);transform:translateY(-6.4px)}}@keyframes shake-vertical{0%,100%{-webkit-transform:translateY(0);transform:translateY(0)}10%,30%,50%,70%{-webkit-transform:translateY(-8px);transform:translateY(-8px)}20%,40%,60%{-webkit-transform:translateY(8px);transform:translateY(8px)}80%{-webkit-transform:translateY(6.4px);transform:translateY(6.4px)}90%{-webkit-transform:translateY(-6.4px);transform:translateY(-6.4px)}}
+
+.tracking-in-contract{-webkit-animation:tracking-in-contract 1.5s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-contract 1.5s cubic-bezier(.215,.61,.355,1.000) both}
+@-webkit-keyframes tracking-in-contract{0%{letter-spacing:1em;opacity:0}40%{opacity:.6}100%{letter-spacing:normal;opacity:1}}@keyframes tracking-in-contract{0%{letter-spacing:1em;opacity:0}40%{opacity:.6}100%{letter-spacing:normal;opacity:1}}
+
+.text-focus-in{-webkit-animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) 1s both;animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) 1s both}
+@-webkit-keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+
+.focus-in-expand-fwd{-webkit-animation:focus-in-expand-fwd 1s cubic-bezier(.25,.46,.45,.94) 1.5s both;animation:focus-in-expand-fwd 1s cubic-bezier(.25,.46,.45,.94) 2s both}
+@-webkit-keyframes focus-in-expand-fwd{0%{letter-spacing:-.5em;-webkit-transform:translateZ(-800px);transform:translateZ(-800px);-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes focus-in-expand-fwd{0%{letter-spacing:-.5em;-webkit-transform:translateZ(-800px);transform:translateZ(-800px);-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+
+.slide-in-top{-webkit-animation:slide-in-top .9s cubic-bezier(.165,.84,.44,1.000) .5s both;animation:slide-in-top .9s cubic-bezier(.165,.84,.44,1.000) .5s both}
+@-webkit-keyframes slide-in-top{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-top{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+
+// animista
 @media (max-width: 1305px) {
     
   .hero-grid {

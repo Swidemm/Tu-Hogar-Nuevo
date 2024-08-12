@@ -1,6 +1,10 @@
 @font-face {
     font-family: "roboto";
-    src: url(../font/Roboto-Regular.ttf);
+    src: url(../../font/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: "Playfair";
+    src: url(../../font/PlayfairDisplay-VariableFont_wght.ttf);
 }
 
 * {
@@ -8,7 +12,7 @@
     margin-bottom: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: roboto, sans-serif;
+    font-family: "roboto", sans-serif;
 }
 ul {
     list-style-type: none;

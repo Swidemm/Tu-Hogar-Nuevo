@@ -1,10 +1,12 @@
 .hero3 {
-  background-color: #0C2144;
-  color: #ffffff;
+  background-color: #FFFFFF;
+  color: #000000;
   padding: 1em;
 }
 
 .cards {
+  margin-top: 1.5rem;
+  background-color: #DEDEDE;
   display: grid;
   grid-template-columns: 2fr 2fr;
   grid-template-rows: 1fr 1fr;
@@ -13,7 +15,8 @@
   gap: 3em;
   list-style-type: none;
   transition: 2s;
-  filter: drop-shadow(1px 1px 30px  black);
+  border-radius: 1rem;
+  outline: solid rgba(0, 0, 0, 0.103);
     .card-pos1 {
       grid-column: 1;
       grid-row: 1;
@@ -51,6 +54,7 @@
   border: solid;
   border-color: rgba(33, 34, 34, 0.414);
   border-width: 0.5em;
+  filter: drop-shadow(1px 1px 30px  black);
   &:hover .card__overlay {
       transform: translateY(0);
       }
@@ -330,7 +334,7 @@
 .textocompleto {
   text-align: center;
   text-transform: uppercase;
-  color: #F1FAEE;
+  color: #000000;
   font-size: 4rem;
   padding: 1rem;
 }
@@ -344,7 +348,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ff6a00;
+  color: #0C2144;
 }
 
 .rolltext {

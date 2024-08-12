@@ -190,6 +190,23 @@
 //         width: 85%;
 //     }
 // }
+@media (max-width: 1920px) {
+    .containerpubli {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1907px) {
+    .containerpubli {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1671px) {
+    .containerpubli {
+        width: 90%;
+    }
+}
 @media (max-width: 1732px) {
     .containerpubli {
         .ads2 {
@@ -218,9 +235,14 @@
         }
     }
 }
-
+@media (max-width: 1489px) {
+    .containerpubli {
+        width: 96%;
+    }
+}
 @media (max-width: 1397px) {
     .containerpubli {
+        width: 80%;
         .ads2 {
             .ad-grid2 {
                 .ads-div2 {
@@ -233,10 +255,13 @@
         }
     }
 }
-
+@media (max-width: 1293px) {
+    .containerpubli {
+        width: 85%;
+    }
+}
 @media (max-width: 1263px) {
     .containerpubli {
-
         .ads2 {
             .ad-grid2 {
                 .ads-div2 {
@@ -250,7 +275,17 @@
         }
     }
 }
+@media (max-width: 1220px) {
+    .containerpubli {
+        width: 90%;
+    }
+}
 
+@media (max-width: 1152px) {
+    .containerpubli {
+        width: 95%;
+    }
+}
 @media (max-width: 1080px) {
         .containerpubli {
         .ads2 {
@@ -266,6 +301,23 @@
         }
     }    
 }
+
+@media (max-width: 1060px) {
+    .containerpubli {
+        .ads2 {
+            .ad-grid2 {
+                .ads-div2 {
+                    gap: 3rem;
+                    .ad-img2 {
+                        width: 25rem;
+                        border-radius: 2rem;
+                    }
+                }
+            }
+        }
+    }   
+}
+
 @media (max-width: 990px) {
         .containerpubli {
         .ads2 {
@@ -281,14 +333,50 @@
     }
 }
 
-@media (max-width: 885px) {
-        .containerpubli {
+@media (max-width: 904px) {
+    .containerpubli {
         .ads2 {
             .ad-grid2 {
                 .ads-div2 {
-                    gap: 2rem;
+                    gap: 3rem;
                     .ad-img2 {
                         width: 22rem;
+                        border-radius: 2rem;
+                    }
+                }
+            }
+        }
+    }   
+}
+
+
+
+@media (max-width: 885px) {
+    .containerpubli {
+        width: 100%;
+    .ads2 {
+        .ad-grid2 {
+            .ads-div2 {
+                gap: 2rem;
+                .ad-img2 {
+                    width: 20rem;
+                }
+            }
+        }
+    }
+}
+}
+
+@media (max-width: 736px) {
+    .containerpubli {
+        .ads2 {
+            .ad-grid2 {
+                .ads-div2 {
+                    display: grid;
+                    gap: 2rem;
+                    .ad-img2 {
+                        width: 27rem;
+                        border-radius: 2rem;
                     }
                 }
             }
@@ -296,21 +384,21 @@
     }
 }
 
-@media (max-width: 716px) {
-        .containerpubli {
-        .ads2 {
-            .ad-grid2 {
-                .ads-div2 {
-                    gap: 2rem;
-                    .ad-img2 {
-                        width: 19rem;
-                        border-radius: 1.5rem;
-                    }
-                }
-            }
-        }
-    }
-}
+// @media (max-width: 716px) {
+//         .containerpubli {
+//         .ads2 {
+//             .ad-grid2 {
+//                 .ads-div2 {
+//                     gap: 2rem;
+//                     .ad-img2 {
+//                         width: 19rem;
+//                         border-radius: 1.5rem;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
 @media (max-width: 650px) {
     .containerpubli {
@@ -346,6 +434,23 @@
     }
 }
 
+@media (max-width: 418px) {
+    .containerpubli {
+        .ads2 {
+            .ad-grid2 {
+                .ads-div2 {
+                    display: grid;
+                    gap: 2rem;
+                    .ad-img2 {
+                        width: 19rem;
+                        border-radius: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 400px) {
     .containerpubli {
         .ads2 {
@@ -355,6 +460,24 @@
                     gap: 2rem;
                     .ad-img2 {
                         width: 19rem;
+                        border-radius: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .containerpubli {
+        width: 100%;
+        .ads2 {
+            .ad-grid2 {
+                .ads-div2 {
+                    display: grid;
+                    gap: 2rem;
+                    .ad-img2 {
+                        width: 18.5rem;
                         border-radius: 1.5rem;
                     }
                 }

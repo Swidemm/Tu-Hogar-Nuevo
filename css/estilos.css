@@ -1052,9 +1052,9 @@ ul {
   bottom: 3em;
   border: unset;
   border-radius: 15px;
-  color: #212121;
+  color: white;
   z-index: 1;
-  background: #e8e8e8;
+  background: #048A81;
   position: relative;
   font-weight: 1000;
   box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
@@ -1098,9 +1098,9 @@ ul {
   top: 6em;
   border: unset;
   border-radius: 15px;
-  color: #212121;
+  color: white;
   z-index: 1;
-  background: #e8e8e8;
+  background: rgba(168, 2, 2, 0.747);
   position: relative;
   font-weight: 1000;
   box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);

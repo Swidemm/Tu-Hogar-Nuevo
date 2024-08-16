@@ -2040,6 +2040,16 @@ ul {
   font-family: "Playfair";
   color: Black;
 }
+.containerpubli .ads2 .ad-text1 {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  filter: drop-shadow(1px 1px 30px rgb(0, 132, 255));
+  font-family: "Playfair";
+  color: Black;
+}
 .containerpubli .ads2 .ad-grid2 {
   display: grid;
   grid-template-columns: 1fr;

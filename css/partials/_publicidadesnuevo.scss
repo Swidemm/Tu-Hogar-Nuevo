@@ -139,6 +139,16 @@
                 font-family: "Playfair";
                 color: Black;
             }
+            .ad-text1 {
+                color: $colorTexto;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 2rem;
+                margin-top: 1rem;
+                filter: drop-shadow(1px 1px 30px  rgb(0, 132, 255));
+                font-family: "Playfair";
+                color: Black;
+            }
             .ad-grid2 {
                 display: grid;
                 grid-template-columns: 1fr;

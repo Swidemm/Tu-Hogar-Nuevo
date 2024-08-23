@@ -1,12 +1,13 @@
 .ads {
-    background-color: $colorPubli;
-    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.548);
+    padding: 0.5rem;
+    border-radius: 1rem;
         .ad-text {
-            color: $colorTexto;
+            color: black;
             display: flex;
             justify-content: center;
             margin-bottom: 1rem;
-            filter: drop-shadow(1px 1px 30px  gray);
+            filter: drop-shadow(1px 1px 10px  rgb(248, 248, 248));
         }
         .ad-grid {
             display: grid;
@@ -20,7 +21,7 @@
                 // gap: 10rem;
                 display: flex;
                 justify-content: center;
-                gap: 15rem;
+                gap: 10rem;
                 
                 filter: drop-shadow(1px 1px 20px  gray);
 
@@ -163,6 +164,21 @@
                 gap: 2rem;
                 .ad-img {
                     width: 20rem;
+                    border-radius: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 370px) {
+    .ads {
+        .ad-grid {
+            .ads-div {
+                display: grid;
+                gap: 2rem;
+                .ad-img {
+                    width: 16rem;
                     border-radius: 1.5rem;
                 }
             }

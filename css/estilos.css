@@ -1594,7 +1594,7 @@ ul {
     font-size: 2rem;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 390px) {
   .cards .card {
     width: 18rem;
   }
@@ -1769,15 +1769,16 @@ ul {
   }
 }
 .ads {
-  background-color: #222725;
-  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.548);
+  padding: 0.5rem;
+  border-radius: 1rem;
 }
 .ads .ad-text {
-  color: #ffffff;
+  color: black;
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
-  filter: drop-shadow(1px 1px 30px gray);
+  filter: drop-shadow(1px 1px 10px rgb(248, 248, 248));
 }
 .ads .ad-grid {
   display: grid;
@@ -1788,7 +1789,7 @@ ul {
 .ads .ad-grid .ads-div {
   display: flex;
   justify-content: center;
-  gap: 15rem;
+  gap: 10rem;
   filter: drop-shadow(1px 1px 20px gray);
   transition: 1500ms;
 }
@@ -1877,6 +1878,16 @@ ul {
   }
   .ads .ad-grid .ads-div .ad-img {
     width: 20rem;
+    border-radius: 1.5rem;
+  }
+}
+@media (max-width: 370px) {
+  .ads .ad-grid .ads-div {
+    display: grid;
+    gap: 2rem;
+  }
+  .ads .ad-grid .ads-div .ad-img {
+    width: 16rem;
     border-radius: 1.5rem;
   }
 }
@@ -2021,6 +2032,8 @@ ul {
 }
 .containerpubli {
   margin: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   background-color: #DEDEDE;
   width: 60%;
   border-radius: 1em;
@@ -2234,6 +2247,16 @@ ul {
   .containerpubli .ads2 .ad-grid2 .ads-div2 .ad-img2 {
     width: 25rem;
     border-radius: 2rem;
+  }
+  .whatsapp-cont {
+    position: fixed;
+    right: 0em;
+    bottom: 0em;
+    z-index: 99999;
+    filter: drop-shadow(0px 0px 5px #25D366);
+  }
+  .whatsapp-cont .wsp-button {
+    width: 4rem;
   }
 }
 @media (max-width: 480px) {

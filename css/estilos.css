@@ -312,7 +312,7 @@ ul {
 }
 
 .render1 {
-  width: 45rem;
+  width: 35rem;
   border: solid 1rem;
   border-color: rgba(179, 194, 242, 0.1882352941);
   transition: 1s;
@@ -414,7 +414,7 @@ ul {
   }
   .render-grid {
     position: relative;
-    width: 45rem;
+    width: 35rem;
     bottom: 5rem;
   }
   .hero-right-grid {
@@ -1783,7 +1783,7 @@ ul {
 .ads .ad-grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: 2fr;
   margin-bottom: 1rem;
 }
 .ads .ad-grid .ads-div {
@@ -1796,7 +1796,7 @@ ul {
 .ads .ad-grid .ads-div .ad-img {
   border: solid;
   border-radius: 5rem;
-  width: 45rem;
+  width: 35rem;
   transition: 1500ms;
 }
 
